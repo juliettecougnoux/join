@@ -1,5 +1,6 @@
 # join
 
+ >
 mysql> SELECT name, COUNT(ab.book_id) FROM authors a LEFT JOIN authors_books ab ON (a.id = ab.author_id) GROUP BY a.id;
 +-----------------+-------------------+
 | name            | COUNT(ab.book_id) |
